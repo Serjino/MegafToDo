@@ -1,5 +1,11 @@
+import { RouterProvider } from "react-router-dom";
+import { Fragment } from "react/jsx-runtime";
+import { router } from "../features/routing/router";
+
 export function App() {
-    return (
-        <div>asd</div>
-    )
+	return (
+		<Fragment>
+			<RouterProvider router={router} />
+		</Fragment>
+	);
 }

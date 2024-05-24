@@ -10,6 +10,10 @@ module.exports = {
             test: /\.tsx?$/,
             use: 'ts-loader',
             exclude: /node_modules/,
+          }, 
+          {
+            test: /\.(css|scss|sass)$/,
+            use: ['style-loader', 'css-loader', 'sass-loader'],
           },
         ],
       },
@@ -23,7 +27,8 @@ module.exports = {
         }),
       ],
 	devServer: {
-		static: "./dist",
+    static: path.join(__dirname, 'dist'),
+    historyApiFallback: true
 	},
 	// optimization: {
 	// 	runtimeChunk: "single",
