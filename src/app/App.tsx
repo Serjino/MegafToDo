@@ -1,11 +1,12 @@
 import { RouterProvider } from "react-router-dom";
-import { Fragment } from "react/jsx-runtime";
-import { router } from "../features/routing/router";
+import { router } from "./routing/router";
+import { ThemeProvider } from "@emotion/react";
+import { defaultTheme } from "./styles/theme/theme";
 
 export function App() {
 	return (
-		<Fragment>
+		<ThemeProvider theme={defaultTheme}>
 			<RouterProvider router={router} />
-		</Fragment>
+		</ThemeProvider>
 	);
 }

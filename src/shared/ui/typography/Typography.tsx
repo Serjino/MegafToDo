@@ -1,19 +1,8 @@
 import styled, { CSSObject } from "@emotion/styled";
 import { ITypographyProps } from "./Typography.def";
 
-export const Typography = styled(({ variant = "body", ...rest }) => {
-	switch (variant) {
-		case "h1":
-			return <h1 {...rest} />;
-		case "h2":
-			return <h2 {...rest} />;
-		case "h3":
-			return <h3 {...rest} />;
-		default:
-			return <p {...rest} />;
-	}
-})<ITypographyProps>`
-	${({ variant, theme }) => {
+export const Typography = styled.p<ITypographyProps>`
+	${({ variant = 'body', theme }) => {
 		let targetStyles = {} as CSSObject;
 		switch (variant) {
 			case "h1":
@@ -47,6 +36,6 @@ export const Typography = styled(({ variant = "body", ...rest }) => {
 				};
 				break;
 		}
-		return {...targetStyles, color: theme.colors.text.main};
+		return { ...targetStyles, color: theme.colors.text.main };
 	}}
 `;
