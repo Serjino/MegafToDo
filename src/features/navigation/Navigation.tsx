@@ -8,13 +8,12 @@ export function Navigation() {
 	const routesWithNavigation = getFlattenedRoutes(routes).filter(
 		(route) => !!route.id
 	);
-	console.log(routesWithNavigation);
 
 	return (
 		<FlexWrapper as={"nav"}>
 			<FlexWrapper as={"ul"}>
 				{routesWithNavigation.map((route) => (
-					<NavListItem key={route.path}>
+					<NavListItem key={route.path + route.id + ""}>
 						<NavLink to={route.path}>{route.id}</NavLink>
 					</NavListItem>
 				))}

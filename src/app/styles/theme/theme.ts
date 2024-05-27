@@ -19,8 +19,8 @@ function getThemeInstance(): ThemeInstance {
 			background: "#f5f5f5",
 		},
 		spaces: {
-			sectionSpacingX: getSpacing(6),
-			sectionSpacingY: getSpacing(4),
+			sectionX: getSpacing(6),
+			sectionY: getSpacing(3),
 		},
 	};
 }

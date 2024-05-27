@@ -5,14 +5,14 @@ import { Navigation } from "../../../features/navigation/Navigation";
 
 export function Header() {
 	return (
-		<header>
-			<FlexWrapper section>
-				<FlexWrapper>
-					<Logo />
-					<Typography as="h1" variant={'h1'}>Furniro</Typography>
-				</FlexWrapper>
-				<Navigation />
+		<FlexWrapper section style={{ justifyContent: "space-between" }}>
+			<FlexWrapper>
+				<Logo />
+				<Typography as="h1" variant={"h1"}>
+					Furniro
+				</Typography>
 			</FlexWrapper>
-		</header>
+			<Navigation />
+		</FlexWrapper>
 	);
 }

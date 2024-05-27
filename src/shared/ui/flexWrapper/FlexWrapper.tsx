@@ -6,8 +6,7 @@ export const FlexWrapper = styled.div<IFlexWrapperProps>`
 	flex-direction: ${({ column }) => (column ? "column" : "row")};
 	align-items: center;
 	padding: ${({ theme, section }) =>
-		section &&
-		`${theme.spaces.sectionSpacingX} ${theme.spaces.sectionSpacingY}`};
+		section && `${theme.spaces.sectionY} ${theme.spaces.sectionX}`};
 	gap: ${({ gap, theme }) =>
 		(gap ? gap * theme.spacing : theme.spacing) + "px"};
 `;
