@@ -19,6 +19,19 @@ module.exports = {
             test: /\.svg$/,
             use: ['@svgr/webpack', 'url-loader'],
           },
+          {
+            test: /\.(png|jpg|webp|gif|mp4)$/,
+            use: [
+              {
+                loader: 'file-loader',
+                // options: {
+                //     name: '[path][name].[ext]',
+                //     outputPath: 'images',
+                //     publicPath: 'images'
+                // },
+              },
+            ],
+          },
         ],
       },
 	resolve: {

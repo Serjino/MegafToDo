@@ -1,5 +1,5 @@
 import { createServer } from "miragejs";
-import { PRODUCTS } from "./mockData/products";
+import { PRODUCTS } from "../../../entities/products/mockData/products";
 
 export function initializeServer() {
 	createServer({

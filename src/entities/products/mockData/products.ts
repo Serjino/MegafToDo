@@ -1,10 +1,15 @@
-export const PRODUCTS = [
+import { FULL_WIDTH_PRODUCT_IMAGES, PREVIEW_PRODUCT_IMAGES } from "../assets";
+import { IProduct } from "../product.def";
+
+export const PRODUCTS: IProduct[] = [
 	{
 		id: 1,
 		title: "Кухонный стол",
 		subTitle: "Качественная деревянная мебель",
 		price: 5000.0,
 		sale: 50,
+		previewPath: PREVIEW_PRODUCT_IMAGES[0],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[0],
 	},
 	{
 		id: 2,
@@ -12,6 +17,8 @@ export const PRODUCTS = [
 		subTitle: "Стул в крепкой конструкции",
 		price: 670.5,
 		sale: 20,
+		previewPath: PREVIEW_PRODUCT_IMAGES[1],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[1]
 	},
 	{
 		id: 3,
@@ -19,6 +26,8 @@ export const PRODUCTS = [
 		subTitle: "Идеальный выбор для гостиной",
 		price: 15000.0,
 		sale: 30,
+		previewPath: PREVIEW_PRODUCT_IMAGES[2],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[2]
 	},
 	{
 		id: 4,
@@ -26,6 +35,8 @@ export const PRODUCTS = [
 		subTitle: "Мягкая и удобная двуспальная кровать",
 		price: 12700.99,
 		sale: 12,
+		previewPath: PREVIEW_PRODUCT_IMAGES[3],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[3]
 	},
 	{
 		id: 5,
@@ -33,6 +44,8 @@ export const PRODUCTS = [
 		subTitle: "Деревянный столик для кофе или чая",
 		price: 899.99,
 		sale: 45,
+		previewPath: PREVIEW_PRODUCT_IMAGES[4],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[4]
 	},
 	{
 		id: 6,
@@ -40,6 +53,8 @@ export const PRODUCTS = [
 		subTitle: "Просторный шкаф для книг и журналов",
 		price: 3300.45,
 		sale: 33,
+		previewPath: PREVIEW_PRODUCT_IMAGES[5],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[5]
 	},
 	{
 		id: 7,
@@ -47,6 +62,8 @@ export const PRODUCTS = [
 		subTitle: "Удобная тумба для размещения техники",
 		price: 2399.5,
 		sale: 28,
+		previewPath: PREVIEW_PRODUCT_IMAGES[6],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[6]
 	},
 	{
 		id: 8,
@@ -54,6 +71,8 @@ export const PRODUCTS = [
 		subTitle: "Практичная полка для хранения",
 		price: 699.3,
 		sale: 10,
+		previewPath: PREVIEW_PRODUCT_IMAGES[7],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[7]
 	},
 	{
 		id: 9,
@@ -61,6 +80,8 @@ export const PRODUCTS = [
 		subTitle: "Удобный пуфик для отдыха",
 		price: 1699.99,
 		sale: 50,
+		previewPath: PREVIEW_PRODUCT_IMAGES[8],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[8]
 	},
 	{
 		id: 10,
@@ -68,6 +89,8 @@ export const PRODUCTS = [
 		subTitle: "Просторный комод для одежды",
 		price: 4800.0,
 		sale: 40,
+		previewPath: PREVIEW_PRODUCT_IMAGES[9],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[9]
 	},
 	{
 		id: 11,
@@ -75,6 +98,8 @@ export const PRODUCTS = [
 		subTitle: "Удобный табурет для кухни",
 		price: 350.75,
 		sale: 15,
+		previewPath: PREVIEW_PRODUCT_IMAGES[10],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[10]
 	},
 	{
 		id: 12,
@@ -82,6 +107,8 @@ export const PRODUCTS = [
 		subTitle: "Практичная вешалка для прихожей",
 		price: 2100.0,
 		sale: 35,
+		previewPath: PREVIEW_PRODUCT_IMAGES[11],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[11]
 	},
 	{
 		id: 13,
@@ -89,6 +116,8 @@ export const PRODUCTS = [
 		subTitle: "Стильное зеркало для спальни",
 		price: 4500.0,
 		sale: 25,
+		previewPath: PREVIEW_PRODUCT_IMAGES[12],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[12]
 	},
 	{
 		id: 14,
@@ -96,6 +125,8 @@ export const PRODUCTS = [
 		subTitle: "Просторный стеллаж для вашей библиотеки",
 		price: 5700.5,
 		sale: 20,
+		previewPath: PREVIEW_PRODUCT_IMAGES[13],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[13]
 	},
 	{
 		id: 15,
@@ -103,6 +134,8 @@ export const PRODUCTS = [
 		subTitle: "Компактный столик для спальни",
 		price: 1300.0,
 		sale: 30,
+		previewPath: PREVIEW_PRODUCT_IMAGES[14],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[14]
 	},
 	{
 		id: 16,
@@ -110,6 +143,8 @@ export const PRODUCTS = [
 		subTitle: "Удобное кресло для гостиной",
 		price: 7900.99,
 		sale: 38,
+		previewPath: PREVIEW_PRODUCT_IMAGES[15],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[15]
 	},
 	{
 		id: 17,
@@ -117,6 +152,8 @@ export const PRODUCTS = [
 		subTitle: "Вместительный шкаф для вашей одежды",
 		price: 9600.75,
 		sale: 40,
+		previewPath: PREVIEW_PRODUCT_IMAGES[16],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[16]
 	},
 	{
 		id: 18,
@@ -124,6 +161,8 @@ export const PRODUCTS = [
 		subTitle: "Элегантное трюмо для спальни",
 		price: 5200.0,
 		sale: 25,
+		previewPath: PREVIEW_PRODUCT_IMAGES[17],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[17]
 	},
 	{
 		id: 19,
@@ -131,6 +170,8 @@ export const PRODUCTS = [
 		subTitle: "Практичный стол для работы или учебы",
 		price: 4200.9,
 		sale: 20,
+		previewPath: PREVIEW_PRODUCT_IMAGES[18],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[18]
 	},
 	{
 		id: 20,
@@ -138,6 +179,8 @@ export const PRODUCTS = [
 		subTitle: "Удобный секретер для хранения бумаг",
 		price: 6800.0,
 		sale: 35,
+		previewPath: PREVIEW_PRODUCT_IMAGES[19],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[19]
 	},
 	{
 		id: 21,
@@ -145,6 +188,8 @@ export const PRODUCTS = [
 		subTitle: "Стул высокий для барной стойки",
 		price: 1500.0,
 		sale: 22,
+		previewPath: PREVIEW_PRODUCT_IMAGES[20],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[20]
 	},
 	{
 		id: 22,
@@ -152,6 +197,8 @@ export const PRODUCTS = [
 		subTitle: "Просторный стол для всей семьи",
 		price: 7200.5,
 		sale: 18,
+		previewPath: PREVIEW_PRODUCT_IMAGES[21],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[21]
 	},
 	{
 		id: 23,
@@ -159,6 +206,8 @@ export const PRODUCTS = [
 		subTitle: "Многофункциональная секция",
 		price: 12300.75,
 		sale: 30,
+		previewPath: PREVIEW_PRODUCT_IMAGES[22],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[22]
 	},
 	{
 		id: 24,
@@ -166,6 +215,8 @@ export const PRODUCTS = [
 		subTitle: "Удобная и безопасная кроватка",
 		price: 5400.99,
 		sale: 28,
+		previewPath: PREVIEW_PRODUCT_IMAGES[23],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[23]
 	},
 	{
 		id: 25,
@@ -173,6 +224,8 @@ export const PRODUCTS = [
 		subTitle: "Мини тумба для хранения",
 		price: 1300.0,
 		sale: 15,
+		previewPath: PREVIEW_PRODUCT_IMAGES[24],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[24]
 	},
 	{
 		id: 26,
@@ -180,6 +233,8 @@ export const PRODUCTS = [
 		subTitle: "Столик с ящиками и зеркалом",
 		price: 4800.5,
 		sale: 40,
+		previewPath: PREVIEW_PRODUCT_IMAGES[25],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[25]
 	},
 	{
 		id: 27,
@@ -187,6 +242,8 @@ export const PRODUCTS = [
 		subTitle: "Комфортный стул для отдыха",
 		price: 3900.5,
 		sale: 12,
+		previewPath: PREVIEW_PRODUCT_IMAGES[26],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[26]
 	},
 	{
 		id: 28,
@@ -194,6 +251,8 @@ export const PRODUCTS = [
 		subTitle: "Большой сундук",
 		price: 6700.5,
 		sale: 25,
+		previewPath: PREVIEW_PRODUCT_IMAGES[27],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[27]
 	},
 	{
 		id: 29,
@@ -201,6 +260,8 @@ export const PRODUCTS = [
 		subTitle: "Удобное кресло для работы",
 		price: 5600.99,
 		sale: 35,
+		previewPath: PREVIEW_PRODUCT_IMAGES[28],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[28]
 	},
 	{
 		id: 30,
@@ -208,5 +269,7 @@ export const PRODUCTS = [
 		subTitle: "Мягкое кресло для отдыха",
 		price: 2600.5,
 		sale: 20,
+		previewPath: PREVIEW_PRODUCT_IMAGES[29],
+		fullImgPath: FULL_WIDTH_PRODUCT_IMAGES[29]
 	},
 ];

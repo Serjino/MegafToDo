@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { FlexWrapper } from "../../../shared/ui/flexWrapper/FlexWrapper";
 import { Typography } from "../../../shared/ui/typography/Typography";
 import { getProductsList } from "../../../entities/products/api/api";
-import { ProductCard } from "../../../entities/products/ui/poductCard/ProductCard";
+import { ProductCard } from "../../../entities/products/ui/productCard/ProductCard";
 
 export function Catalog() {
 	const [productsList, setProductsList] = useState([]);
@@ -17,8 +17,9 @@ export function Catalog() {
 			<Typography as={"h1"} variant="h1">
 				Наши товары
 			</Typography>
-			<FlexWrapper style={{ flexWrap: "wrap" }}>
+			<FlexWrapper style={{ flexWrap: "wrap" }} gap={4}>
 				{productsList.map((product) => {
+					console.log(product)
 					return <ProductCard key={product.id} {...product} />;
 				})}
 			</FlexWrapper>
