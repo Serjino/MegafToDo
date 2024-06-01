@@ -1,6 +1,6 @@
 import { routes } from "../../shared/routes";
 import { FlexWrapper } from "../../shared/ui/flexWrapper/FlexWrapper";
-import { getFlattenedRoutes } from "./model/get";
+import { getFlattenedRoutes } from "./model/getFlattenedRoutes";
 import { NavLink } from "./ui/NavLink";
 import { NavListItem } from "./ui/NavListItem";
 
