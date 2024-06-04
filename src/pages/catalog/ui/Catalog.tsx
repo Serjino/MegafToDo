@@ -13,11 +13,11 @@ export function Catalog() {
 	}, []);
 
 	return (
-		<FlexWrapper section column gap={4}>
+		<FlexWrapper  column gap={4} style={{height: "100%"}}>
 			<Typography as={"h1"} variant="h1">
 				Наши товары
 			</Typography>
-			<FlexWrapper style={{ flexWrap: "wrap" }} gap={4}>
+			<FlexWrapper section style={{ flexWrap: "wrap", height: "calc(100% - 156px)", width: "100%", overflow: "auto"}} gap={4}>
 				{productsList.map((product) => {
 					console.log(product)
 					return <ProductCard key={product.id} {...product} />;

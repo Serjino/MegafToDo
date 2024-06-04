@@ -4,6 +4,7 @@ import { ThemeProvider } from "@emotion/react";
 import { defaultTheme } from "./styles/theme/theme";
 import { SnackbarProvider } from "notistack";
 import { initializeServer } from "./api/server/server";
+import "./styles/index.scss";
 
 initializeServer();
 
