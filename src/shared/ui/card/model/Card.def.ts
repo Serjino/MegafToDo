@@ -3,4 +3,5 @@ export interface ICardProps {
     title: string
     subTitle: string
     children?: React.ReactNode
+    onClick?: () => void 
 }
